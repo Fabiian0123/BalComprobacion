@@ -71,6 +71,7 @@ public class PrimerasOpciones extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -194,6 +195,16 @@ public class PrimerasOpciones extends javax.swing.JFrame {
         jLabel7.setText("Total Haber:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, -1, -1));
 
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("Salir");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 20, 60, -1));
+
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
@@ -264,6 +275,13 @@ public class PrimerasOpciones extends javax.swing.JFrame {
        
     }//GEN-LAST:event_jButton5MouseClicked
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int a = JOptionPane.YES_NO_OPTION;
+        int muestra = JOptionPane.showConfirmDialog(this, "¿ESTA SEGURO QUE DESEA SALIR?","CERRAR SESIÓN",a);
+        if(muestra == 0){
+            System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -306,6 +324,7 @@ public class PrimerasOpciones extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnExportar;
+    private javax.swing.JButton jButton1;
     public javax.swing.JButton jButton3;
     public javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;

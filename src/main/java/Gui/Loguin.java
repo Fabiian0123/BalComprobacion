@@ -23,6 +23,8 @@ public class Loguin extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -74,6 +76,24 @@ public class Loguin extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, -1, -1));
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 293, -1));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\fabia\\OneDrive\\Documents\\NetBeansProjects\\BalGeneral\\src\\main\\java\\Gui\\ver.png")); // NOI18N
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 30, 20));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\fabia\\OneDrive\\Documents\\NetBeansProjects\\BalGeneral\\src\\main\\java\\Gui\\oculto.png")); // NOI18N
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, -1, -1));
+
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\fabia\\OneDrive\\Escritorio\\recursos contabilidad\\fondo loguin1.png")); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 480));
 
@@ -107,6 +127,18 @@ public class Loguin extends javax.swing.JFrame {
                 + "el cual muestra el balance general teniendo en cuenta los montos "
                 + "ingresados en la tabla.");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        jLabel4.setVisible(false);
+        jLabel5.setVisible(true);
+        jPasswordField1.setEchoChar((char)0);
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        jLabel4.setVisible(true);
+        jLabel5.setVisible(false);
+        jPasswordField1.setEchoChar('●');
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     
     public static void main(String args[]) {
@@ -147,6 +179,8 @@ public class Loguin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
